@@ -59,8 +59,7 @@ const NetworkPickerModal = ({onClose, showModal}: NetworkPickerModalParams) => {
             <FormControlLabel value={Network.MAINNET} control={<Radio />} label={Network.MAINNET} />
             <Divider />
             <Typography className="tw-text-xl tw-mt-5 tw-mb-4">Testnets</Typography>
-            <FormControlLabel value={Network.HOLESKY} control={<Radio />} label={Network.HOLESKY} />
-            <FormControlLabel value={Network.GOERLI} control={<Radio />} label={Network.GOERLI} />
+            <FormControlLabel value={Network.AURORIA} control={<Radio />} label={Network.AURORIA} />
           </RadioGroup>
 
           <Button
