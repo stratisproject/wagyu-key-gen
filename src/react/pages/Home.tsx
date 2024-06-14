@@ -105,11 +105,11 @@ const Home = () => {
         <div className="tw-mt-5">
           <div>
             <span className="tw-text-gray">Github:</span>{" "}
-            <span className="tw-text-sm">https://github.com/stake-house/wagyu-key-gen</span>
+            <span className="tw-text-sm">https://github.com/stratisproject/wagyu-key-gen</span>
           </div>
           <div>
             <span className="tw-text-gray">Support:</span>{" "}
-            <span className="tw-text-sm">https://dsc.gg/ethstaker</span>
+            <span className="tw-text-sm">https://discord.gg/6AvHdfKRek</span>
           </div>
         </div>
 
