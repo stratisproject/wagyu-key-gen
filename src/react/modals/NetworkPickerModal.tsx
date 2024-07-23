@@ -23,7 +23,7 @@ interface NetworkPickerModalParams {
  */
 const NetworkPickerModal = ({onClose, showModal}: NetworkPickerModalParams) => {
   const { network, setNetwork } = useContext(GlobalContext);
-  const [formNetwork, setFormNetwork] = useState<Network>(Network.MAINNET);
+  const [formNetwork, setFormNetwork] = useState<Network>(Network.STRATIS);
 
   useEffect(() => {
     if (network) {
@@ -56,7 +56,7 @@ const NetworkPickerModal = ({onClose, showModal}: NetworkPickerModalParams) => {
         <div className="tw-text-4xl tw-my-7">Network</div>
         <FormControl variant="standard" focused>
           <RadioGroup aria-label="gender" name="gender1" value={formNetwork} onChange={onNetworkChange}>
-            <FormControlLabel value={Network.MAINNET} control={<Radio />} label={Network.MAINNET} />
+            <FormControlLabel value={Network.STRATIS} control={<Radio />} label={Network.STRATIS} />
             <Divider />
             <Typography className="tw-text-xl tw-mt-5 tw-mb-4">Testnets</Typography>
             <FormControlLabel value={Network.AURORIA} control={<Radio />} label={Network.AURORIA} />

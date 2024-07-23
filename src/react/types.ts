@@ -21,6 +21,6 @@ export enum ReuseMnemonicAction {
 }
 
 export enum Network {
-  MAINNET = "Stratis Mainnet",
+  STRATIS = "Stratis",
   AURORIA = "Auroria",
 }

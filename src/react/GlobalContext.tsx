@@ -8,7 +8,7 @@ interface GlobalContextType {
 }
 
 export const GlobalContext = createContext<GlobalContextType>({
-  network: Network.MAINNET,
+  network: Network.STRATIS,
   setNetwork: () => {},
 });
 
@@ -16,7 +16,7 @@ export const GlobalContext = createContext<GlobalContextType>({
  * Global context for the network which is used across the application
  */
 const GlobalContextWrapper = ({ children }: { children: React.ReactNode}) => {
-  const [network, setNetwork] = useState<Network>(Network.MAINNET);
+  const [network, setNetwork] = useState<Network>(Network.STRATIS);
 
   return (
     <GlobalContext.Provider value={{ network, setNetwork }}>

@@ -10,12 +10,12 @@ class BaseChainSetting(NamedTuple):
     GENESIS_VALIDATORS_ROOT: bytes
 
 
-MAINNET = 'mainnet'
+STRATIS = 'stratis'
 AURORIA = 'auroria'
 
-# Mainnet setting
-MainnetSetting = BaseChainSetting(
-    NETWORK_NAME=MAINNET, GENESIS_FORK_VERSION=bytes.fromhex('0a000000'),
+# Stratis setting
+StratisSetting = BaseChainSetting(
+    NETWORK_NAME=STRATIS, GENESIS_FORK_VERSION=bytes.fromhex('0a000000'),
     GENESIS_VALIDATORS_ROOT=bytes.fromhex('a73c6c40923a73d0ba772eb3791352c8f6cf42bd72c4677e9153d5a14de991e5'))
 # Auroria setting
 AuroriaSettings = BaseChainSetting(
@@ -24,12 +24,12 @@ AuroriaSettings = BaseChainSetting(
 )
 
 ALL_CHAINS: Dict[str, BaseChainSetting] = {
-    MAINNET: MainnetSetting,
+    STRATIS: StratisSetting,
     AURORIA: AuroriaSettings,
 }
 
 
-def get_chain_setting(chain_name: str = MAINNET) -> BaseChainSetting:
+def get_chain_setting(chain_name: str = STRATIS) -> BaseChainSetting:
     return ALL_CHAINS[chain_name]
 
 
